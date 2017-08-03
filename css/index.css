@@ -1,0 +1,379 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+div,
+section,
+footer,
+header {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+fieldset,
+img {
+  border: none;
+}
+img {
+  display: block;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+th,
+var {
+  font-style: normal;
+  font-weight: normal;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+input {
+  padding-top: 0;
+  padding-bottom: 0;
+  font-family: "SimSun", "宋体";
+}
+input::-moz-focus-inner {
+  border: none;
+  padding: 0;
+}
+select,
+input {
+  vertical-align: middle;
+}
+select,
+input,
+textarea {
+  font-size: 12px;
+  margin: 0;
+}
+input[type="text"],
+input[type="password"],
+textarea {
+  outline-style: none;
+  -webkit-appearance: none;
+}
+textarea {
+  resize: none;
+}
+input,
+textarea {
+  background: none;
+  border: none;
+}
+table {
+  border-collapse: collapse;
+}
+body {
+  color: #333;
+  font: 12px/1.2 "微软雅黑", "SimSun", "Arial Narrow", HELVETICA;
+  background: #fff;
+}
+a {
+  text-decoration: none;
+}
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+body {
+  background: #f9f9f9;
+}
+header {
+  height: 0.94rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 0.3rem;
+  background: #FA3432;
+  color: #fff;
+  padding-left: 0.15rem;
+  padding-right: 0.2rem;
+}
+header .logo a {
+  display: flex;
+  align-items: center;
+}
+header .logo h1 {
+  font-size: 0.3rem;
+}
+header a {
+  color: #fff;
+}
+header a img {
+  width: 0.47rem;
+  height: 0.49rem;
+  margin-right: 0.1rem;
+}
+.topnav {
+  height: 0.86rem;
+  font-size: 0.24rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.topnav a {
+  color: #4b4a4a;
+}
+.topnav .current {
+  color: #ff3636;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe .swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe .swipe-wrap > div {
+  float: left;
+  width: 100%;
+  position: relative;
+}
+.swipe img {
+  /*让图片100%*/
+  width: 100%;
+}
+.swipe .indirector {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.swipe .indirector span {
+  display: inline-block;
+  margin: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.swipe .indirector span.on {
+  background-color: red;
+}
+.usernav {
+  background: #fff;
+  font-size: 0.3rem;
+  color: #808080;
+}
+.usernav .item {
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.usernav .item .itemlist {
+  text-align: center;
+}
+.usernav .item .iconfont {
+  width: 0.9rem;
+  height: 0.9rem;
+  display: block;
+  text-align: center;
+  line-height: 0.9rem;
+  font-size: 0.5rem;
+  margin: 0 auto;
+  border-radius: 40%;
+  color: #fff;
+  margin-bottom: 0.1rem;
+}
+.usernav .item .icon-suo {
+  background: #4099E9;
+}
+.usernav .item .icon-women {
+  background: #FB6361;
+}
+.usernav .item .icon-xinshouzhiyin {
+  background: #40C8B0;
+}
+.usernav .item .icon-wenti {
+  background: #FFAE28;
+}
+.hot {
+  padding-left: 0.24rem;
+  padding-right: 0.24rem;
+  height: 0.95rem;
+  background: #f9f9f9;
+  font-size: 0.3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.hot .hotl {
+  display: flex;
+  align-items: center;
+}
+.hot .hotl .hotimg {
+  width: 0.4rem;
+  height: 0.4rem;
+  margin-right: 0.15rem;
+  background-size: 0.4rem 0.4rem;
+  display: block;
+}
+.hot .hotl .hotfont {
+  color: #494848;
+}
+.hot .hotr {
+  color: #9a9b9c;
+}
+.hotmore {
+  border-top: 1px solid #ccc;
+}
+.hotmore .hotimg {
+  background: url('../images/home_ico_09.png') no-repeat;
+}
+.hotmore .item .itemlist {
+  height: 2.55rem;
+  margin-left: 0.23rem;
+  margin-right: 0.23rem;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 1%;
+  margin-bottom: 0.25rem;
+}
+.hotmore .item .itemlist .itemtop {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 0.25rem;
+}
+.hotmore .item .itemlist .itemtop .itemtop-h {
+  color: #494848;
+  font-size: 0.28rem;
+}
+.hotmore .item .itemlist .itemtop .itemtop-div {
+  color: #fff;
+  display: flex;
+  height: 0.3rem;
+  text-align: center;
+  line-height: 0.3rem;
+  font-size: 0.2rem;
+}
+.hotmore .item .itemlist .itemtop .itemtop-div span {
+  width: 0.8rem;
+  background: #FFAB37;
+  border-radius: 5%;
+}
+.hotmore .item .itemlist .itemtop .itemtop-div em {
+  width: 0.3rem;
+  background: #FF7404;
+  margin-left: 0.1rem;
+  border-radius: 5%;
+}
+.hotmore .item .itemlist .itembtm {
+  display: flex;
+  align-items: center;
+  margin-top: 0.28rem;
+}
+.hotmore .item .itemlist .itembtm .itembtm-p {
+  margin-left: 0.43rem;
+}
+.hotmore .item .itemlist .itembtm .itembtm-p strong {
+  font-size: 0.38rem;
+  color: #FB4034;
+}
+.hotmore .item .itemlist .itembtm .itembtm-p span {
+  font-size: 0.24rem;
+  color: #FF7900;
+}
+.hotmore .item .itemlist .itembtm .itembtm-div {
+  font-size: 0.3rem;
+  margin-left: 0.87rem;
+  line-height: 0.45rem;
+}
+.hotmore .item .itemlist .itembtm .itembtm-div p {
+  color: #3d3c3c;
+}
+.hotmore .item .itemlist .itembtm .itembtm-div span {
+  color: #9a9b9c;
+}
+.hotmore .item .itemlist .itembtm .itembtm-img {
+  margin-left: 0.56rem;
+  width: 1.36rem;
+  height: 1.36rem;
+}
+.news .hotimg {
+  background: url('../images/home_ico_10.png') no-repeat;
+}
+.news .item {
+  border-top: 1px solid #ccc;
+  padding-top: 0.35rem;
+  padding-left: 0.23rem;
+  border-bottom: 1px solid #ccc;
+  background: #fff;
+}
+.news .item .itemlist a {
+  display: flex;
+  font-size: 0.3rem;
+  margin-bottom: 0.35rem;
+}
+.news .item .itemlist-l {
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 5%;
+  flex: 0 0 auto;
+}
+.news .item .itemlist-r {
+  margin-left: 0.23rem;
+  margin-right: 0.23rem;
+  flex: 1 1 auto;
+}
+.news .item .itemlist-r h4 {
+  color: #494848;
+  margin-top: 0.1rem;
+}
+.news .item .itemlist-r p {
+  display: flex;
+  justify-content: space-between;
+  color: #9a9b9c;
+  margin-top: 0.2rem;
+}
+footer {
+  margin-top: 0.23rem;
+  border-top: 1px solid #ccc;
+  background: #fff;
+  text-align: center;
+  height: 1.65rem;
+}
+footer div {
+  padding-top: 0.45rem;
+}
+footer p {
+  font-size: 0.26rem;
+  color: #9a9b9c;
+  padding-bottom: 0.15rem;
+}
+footer p a {
+  color: #494848;
+}

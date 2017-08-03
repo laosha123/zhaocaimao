@@ -1,0 +1,135 @@
+@import "z.less";
+
+@import "zcm.less";
+body{background:#f9f9f9;}
+//顶部区域
+header{
+    .h(94);display:flex;align-items:center;
+    justify-content:space-between;.fs(30);
+    background:#FA3432;color:#fff;
+    .pl(15);.pr(20);
+    .logo{
+        a{display:flex;align-items:center;}
+        h1{.fs(30);}
+    }
+    a{color:#fff;img{.w(47);.h(49);.mr(10);}}
+}
+//顶部导航
+.topnav{
+    .h(86);.fs(24);
+    display:flex;align-items:center;
+    justify-content:space-around;
+    a{color:#4b4a4a;}
+    .current{color:#ff3636;}
+}
+//轮播图
+.swipe {
+    overflow: hidden;
+    visibility: hidden;
+    position: relative;
+    .swipe-wrap {
+      overflow: hidden;
+      position: relative;
+    }
+    .swipe-wrap > div {
+      float:left;
+      width:100%;
+      position: relative;
+    }
+    
+    img{ /*让图片100%*/
+        width: 100%;  
+    }
+    
+    .indirector{
+        position: absolute;
+        bottom:20px;
+        left:50%;transform: translateX(-50%);
+    }
+    .indirector span{
+        display: inline-block;margin: 3px;
+        width: 10px;height: 10px;border-radius: 50%;
+        background-color: #fff;
+    }
+    .indirector span.on{
+        background-color: red;
+    }
+}
+//用户导航
+.usernav{
+    background:#fff;.fs(30);color:#808080;
+    .item{
+        .h(200);
+        display:flex;align-items:center;justify-content:space-around;
+        .itemlist{.tc();}
+        .iconfont{.w(90);.h(90);display:block;.tc();.lh(90);.fs(50);margin:0 auto;border-radius:40%;color:#fff;.mb(10);}
+        .icon-suo{background:#4099E9;}
+        .icon-women{background:#FB6361;}
+        .icon-xinshouzhiyin{background:#40C8B0;}
+        .icon-wenti{background:#FFAE28;}
+    }
+}
+//热门和企业共有标题
+.hot{
+    .pl(24);.pr(24);
+    .h(95);background:#f9f9f9;.fs(30);display:flex;
+    align-items:center;justify-content: space-between;
+    .hotl{
+        display:flex;align-items:center;
+        .hotimg{.w(40);.h(40);.mr(15);.bs(40,40);display:block;}
+        .hotfont{color:#494848;}
+    }
+    .hotr{color:#9a9b9c;}
+    }
+//热门产品
+.hotmore{
+    border-top:1px solid #ccc;
+    .hotimg{background:url('../images/home_ico_09.png') no-repeat;}
+    .item{
+        .itemlist{
+            .h(255);.ml(23);.mr(23);.pl(25);.pr(25);
+            background:#fff;border:1px solid #ccc;
+            border-radius:1%;.mb(25);
+            .itemtop{
+                display:flex;justify-content: space-between;
+                .pt(25);
+                .itemtop-h{color:#494848;.fs(28);}
+                .itemtop-div{color:#fff;display:flex;.h(30);.tc();.lh(30);.fs(20);}
+                .itemtop-div span{.w(80);background:#FFAB37;border-radius:5%;}
+                .itemtop-div em{.w(30);background:#FF7404;.ml(10);border-radius:5%;}
+            }
+            .itembtm{
+                display:flex;align-items:center;.mt(28);
+                .itembtm-p{.ml(43);}
+                .itembtm-p strong{.fs(38);color:#FB4034;}
+                .itembtm-p span{.fs(24);color:#FF7900;}
+                .itembtm-div{.fs(30);.ml(87);.lh(45);}
+                .itembtm-div p{color:#3d3c3c;}
+                .itembtm-div span{color:#9a9b9c;}
+                .itembtm-img{.ml(56);.w(136);.h(136);}
+            }
+        }
+    }
+}
+//企业动态
+.news{
+   .hotimg{background:url('../images/home_ico_10.png') no-repeat;} 
+   .item{
+       border-top:1px solid #ccc;.pt(35);.pl(23);
+       border-bottom:1px solid #ccc;background:#fff;
+       .itemlist a{display:flex;.fs(30);.mb(35);}
+       .itemlist-l{.w(110);.h(110);border-radius:5%;flex:0 0 auto;}
+       .itemlist-r{
+           .ml(23);.mr(23);flex:1 1 auto;
+           h4{color:#494848;.mt(10);}
+           p{display:flex;justify-content: space-between;color:#9a9b9c;.mt(20);}
+       }
+   }
+}
+//版权
+footer{
+    .mt(23);border-top:1px solid #ccc;
+    background:#fff;.tc();.h(165);
+    div{.pt(45);}
+    p{.fs(26);color:#9a9b9c;a{color:#494848;}.pb(15);}
+}
